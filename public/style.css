@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Base */
+body {
+  font-family: "Short Stack", cursive;
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 24px;
+}
+
+/* Heading */
+h1 {
+  color: #14d117;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Fieldsets (server + client components) */
+fieldset {
+  background-color: #444;
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  max-width: 560px;
+}
+
+legend {
+  background-color: #555;
+  color: #e0e0e0;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+fieldset p {
+  margin-bottom: 16px;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* Notes list */
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 8px;
+}
+
+li {
+  padding: 8px 12px;
+  background-color: #3a3a3a;
+  border-left: 3px solid #14d117;
+  border-radius: 4px;
+}
+
+/* Button */
+button {
+  font: inherit;
+  padding: 10px 24px;
+  background-color: #14d117;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+button:hover,
+button:active {
+  background-color: #00ff04;
+}
+
+/* Spinner */
+.spinner {
+  font-size: 50px;
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
